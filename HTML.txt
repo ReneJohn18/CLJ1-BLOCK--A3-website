@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn With Us</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background-color: #1e40af;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bfdbfe;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        .button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Learn With Us</h1>
+        <p>Your simple educational website</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="home" class="card">
+            <h2>Welcome!</h2>
+            <p>
+                Welcome to Learn With Us! This website is designed to help
+                students learn basic computer and web development concepts.
+            </p>
+        </section>
+
+        <section id="lessons" class="card">
+            <h2>Lesson 1: What is HTML?</h2>
+            <p>
+                HTML stands for <strong>HyperText Markup Language</strong>.
+                It is used to create and structure webpages.
+            </p>
+
+            <h3>Common HTML Tags</h3>
+
+            <ul>
+                <li>&lt;h1&gt; - Creates a heading</li>
+                <li>&lt;p&gt; - Creates a paragraph</li>
+                <li>&lt;a&gt; - Creates a link</li>
+                <li>&lt;img&gt; - Displays an image</li>
+                <li>&lt;button&gt; - Creates a button</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Lesson 2: What is CSS?</h2>
+            <p>
+                CSS stands for <strong>Cascading Style Sheets</strong>.
+                CSS is used to make webpages look attractive by changing
+                colors, fonts, spacing, layouts, and more.
+            </p>
+        </section>
+
+        <section id="quiz" class="card">
+            <h2>Quick Quiz</h2>
+
+            <p><strong>What does HTML stand for?</strong></p>
+
+            <button class="button" onclick="showAnswer()">
+                Show Answer
+            </button>
+
+            <p id="answer"></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Learn With Us | Educational Website</p>
+    </footer>
+
+    <script>
+        function showAnswer() {
+            document.getElementById("answer").textContent =
+                "HTML stands for HyperText Markup Language.";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+function checkAnswer(answer) {
+    const result = document.getElementById("result");
+
+    if (answer === "correct") {
+        result.textContent = "✅ Correct! Great job!";
+        result.style.color = "green";
+    } else {
+        result.textContent = "❌ Incorrect. Try again!";
+        result.style.color = "red";
+    }
+}
